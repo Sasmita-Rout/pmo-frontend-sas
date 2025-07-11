@@ -191,6 +191,7 @@ const PortFolioHomePage = () => {
                 const response = await createUpdateRecord(
                     null,
                     `list_of_group_records_by_deliverydirector_and_monthyear/?page=${paginationModel.page + 1}&page_size=${10}`,
+                    // `list_of_group_records_by_deliverydirector_and_monthyear/?page=${paginationModel.page + 1}&page_size=${10}`,
                     null,
                     "GET"
                 );
