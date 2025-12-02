@@ -1,9 +1,8 @@
 {
   "name": "pmo_upgrade",
   "version": "0.1.0",
+  "homepage": "https://sasmita-rout.github.io/existing-ats-sasm/",
   "private": true,
-  "homepage": "pmo_portfolio/#/login",
-  "start_url": "https://intranet.accionlabs.com/pmo_portfolio/#/login",
   "dependencies": {
     "@azure/msal-browser": "^4.12.0",
     "@base-ui-components/react": "^1.0.0-alpha.6",
@@ -31,7 +30,9 @@
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
