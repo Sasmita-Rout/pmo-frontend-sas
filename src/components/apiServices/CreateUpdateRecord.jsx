@@ -1,4 +1,3 @@
-import { JWT_HEADER, JSON_HEADER } from "../../config/authConfig";
 import apiUrlConfig from "../../config/apiUrlConfig";
 
 async function createUpdateRecord(token, endpoint, data, method) {

@@ -1,11 +1,11 @@
-import { JWT_HEADER, JSON_HEADER } from "../../config/authConfig";
+import {  JSON_HEADER } from "../../config/authConfig";
 
 async function fetchRecords(endpoint, token, fetchAsTxt, fetchAsBlob) {
   const config = {
     method: 'GET',
     mode: 'cors',
     headers: token
-      ? Object.assign({}, JWT_HEADER(token), JSON_HEADER)
+      ? Object.assign({}, JSON_HEADER)
       : Object.assign({}, JSON_HEADER),
     cache: 'default',
   };

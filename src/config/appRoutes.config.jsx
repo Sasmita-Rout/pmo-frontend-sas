@@ -1,11 +1,11 @@
 import {
   HomePage,
   PortFolioStatus,
-  PageNotFound,
   PortFolioHomePage,
 } from "../pages";
-import LoginPage from "../pages/Login";
 import { Navigate } from "react-router-dom";
+
+
 
 export const appRoutes = [
   {
@@ -29,11 +29,9 @@ export const appRoutes = [
     element: <PortFolioHomePage />,
   },
   {
-    path: "/login",
-    element: <LoginPage />,
-  },
-  {
-    path: "*",
-    element: <Navigate to="/login" replace />
-  }
+  path: "*",
+  element: <Navigate to="/portfolio" replace />
+}
+
+ 
 ];
