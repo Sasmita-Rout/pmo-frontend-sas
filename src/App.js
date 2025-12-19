@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+import './App.css';
+import { RouterProvider, createHashRouter } from "react-router-dom";
+import { appRoutes } from "./config/appRoutes.config";
+
+function App() {
+  const router = createHashRouter(appRoutes);
+  return (
+    <div className="App">
+      <RouterProvider router={router} />
+    </div>
+    
+=======
 import logo from './logo.svg';
 import './App.css';
 
@@ -19,6 +32,7 @@ function App() {
         </a>
       </header>
     </div>
+>>>>>>> main
   );
 }
 
