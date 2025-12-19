@@ -8,12 +8,8 @@
 # testing
 /coverage
 
-<<<<<<< HEAD
-=======
-# production
-/build
 
->>>>>>> main
+
 # misc
 .DS_Store
 .env.local
